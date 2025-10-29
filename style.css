@@ -1,0 +1,87 @@
+@font-face {
+  font-family: sans;
+  src: url(assest/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  align-items: center;
+}
+main header {
+  height: 3rem;
+  background-image: linear-gradient(to right, #0f77fc, #7f40f2);
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  font-weight: 700;
+  font-family: sans;
+  font-size: 0.9rem;
+}
+main section .logo img {
+  padding: 2rem;
+}
+main #secondSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+}
+main #secondSection .top img {
+  width: 100%;
+}
+main #secondSection .bottom h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: sans;
+  line-height: 1;
+}
+main #thirdSection {
+  background: linear-gradient(to bottom left, #ffffff, #e6c6d5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+main #thirdSection h2 {
+  font-family: sans;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  main #secondSection {
+    flex-direction: row-reverse;
+    padding: 1rem 6rem;
+    align-items: center;
+  }
+  main #secondSection .top,
+  main #secondSection .bottom {
+    width: 50%;
+  }
+  main #secondSection .bottom h1 {
+    max-width: 90%;
+    font-size: 4rem;
+    text-align: left;
+    margin: 0 auto;
+  }
+  main #thirdSection {
+    padding: 6rem 0;
+  }
+  main #thirdSection h2 {
+    max-width: 63%;
+  }
+}/*# sourceMappingURL=style.css.map */
