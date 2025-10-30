@@ -61,6 +61,100 @@ main #thirdSection h2 {
   text-align: center;
   margin: 0 auto;
 }
+main #fourthSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+main #fourthSection .top img, main #fourthSection .bottom img, main #fourthSection .middle img {
+  width: 100%;
+  padding-top: 3rem;
+}
+main #fourthSection .top h2 {
+  font-family: sans;
+}
+main #fourthSection .top p {
+  font-family: Roboto;
+  padding-top: 2rem;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+main #fourthSection .middle h2 {
+  font-family: sans;
+}
+main #fourthSection .middle p {
+  font-family: Roboto;
+  padding-top: 2rem;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+main #fourthSection .bottom h2 {
+  font-family: sans;
+}
+main #fourthSection .bottom p {
+  font-family: Roboto;
+  padding-top: 2rem;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+main #fifthSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+main #fifthSection .top img {
+  width: 100%;
+}
+main #fifthSection .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main #fifthSection .bottom h4 {
+  color: #4a4a4a;
+  font-family: sans;
+  font-weight: 700;
+}
+main #fifthSection .bottom h2 {
+  font-size: 2.5rem;
+  font-family: sans;
+}
+main #fifthSection .bottom p {
+  font-family: roboto;
+  color: #4a4a4a;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+main #fifthSection .bottom .lower {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0rem;
+}
+main #fifthSection .bottom .lower button {
+  padding: 0.8rem 2.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 45px;
+  border: 1px solid #0468D7;
+  color: #0468D7;
+  font-weight: 700;
+  font-family: sans;
+}
+main #fifthSection .bottom .lower a {
+  font-family: sans;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding-left: 1.6rem;
+}
 
 @media (min-width: 900px) {
   main #secondSection {
@@ -83,5 +177,40 @@ main #thirdSection h2 {
   }
   main #thirdSection h2 {
     max-width: 63%;
+  }
+  main #fourthSection {
+    padding: 0rem 6rem;
+    flex-direction: row;
+  }
+  main #fourthSection .top h2, main #fourthSection .bottom h2, main #fourthSection .middle h2 {
+    font-size: 2rem;
+  }
+  main #fourthSection .top p, main #fourthSection .bottom p, main #fourthSection .middle p {
+    font-size: 1.3rem;
+  }
+  main #fifthSection {
+    flex-direction: row-reverse;
+    padding: 1rem 6rem;
+  }
+  main #fifthSection .top, main #fifthSection .bottom {
+    width: 50%;
+  }
+  main #fifthSection .bottom {
+    justify-content: center;
+  }
+  main #fifthSection .bottom h4 {
+    font-size: 1.5rem;
+  }
+  main #fifthSection .bottom h2 {
+    font-size: 3.7rem;
+  }
+  main #fifthSection .bottom p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  main #fifthSection .bottom .lower {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

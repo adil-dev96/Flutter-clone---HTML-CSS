@@ -71,6 +71,115 @@ main {
       margin: 0 auto;
     }
   }
+
+  #fourthSection{
+    @include flex-column(5rem);
+    padding: 2rem;
+
+    margin-top: 4rem;
+    .top,.bottom,.middle{
+      img{
+        width: 100%;
+        padding-top: 3rem;
+      }
+    }
+
+    .top{
+      h2{
+        font-family: sans;
+      }
+      p{
+        font-family:Roboto;
+        padding-top: 2rem;
+        color: #4a4a4a;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+
+    }
+
+    .middle{
+      h2{
+        font-family: sans;
+      }
+
+      p{
+         font-family:Roboto;
+        padding-top: 2rem;
+        color: #4a4a4a;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    .bottom{
+      h2{
+        font-family: sans;
+      }
+
+      p{
+         font-family:Roboto;
+        padding-top: 2rem;
+        color: #4a4a4a;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+
+  #fifthSection{
+    @include flex-column(2rem);
+    padding: 2rem;
+    
+    .top img{ 
+      width: 100%;
+    }
+
+    .bottom{
+      @include flex-column(1rem);
+      padding: 1rem;
+      h4{
+        color: #4a4a4a;
+        font-family: sans;
+        font-weight: 700;
+      }
+
+      h2{
+        font-size: 2.5rem;
+        font-family: sans;
+      }
+
+      p{
+        font-family: roboto;
+        color: #4a4a4a;
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+      }
+
+      .lower{
+        @include flex-column(2rem);
+        padding: 0rem;
+
+        button{
+          padding: .8rem 2.5rem;
+          width: fit-content;
+          border-radius: 45px;
+          border: 1px solid #0468D7;
+          color: #0468D7;
+          font-weight: 700;
+          font-family: sans;
+        }
+
+        a{
+          font-family: sans;
+          text-decoration: none;
+          color: black;
+          font-weight: 700;
+          padding-left: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -100,6 +209,55 @@ main {
       h2{
         
         max-width: 63%;
+      }
+    }
+
+    #fourthSection{
+      padding: 0rem 6rem;
+      flex-direction: row;
+
+      .top ,.bottom,.middle{
+        h2{
+          font-size: 2rem;
+        }
+
+        p{
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    #fifthSection{
+      flex-direction: row-reverse;
+      padding: 1rem 6rem;
+      
+      .top,.bottom{
+        width: 50%;
+      }
+
+      .bottom{
+        justify-content: center;
+
+        h4{
+          font-size: 1.5rem;
+        }
+
+      h2{
+        font-size: 3.7rem;
+      }
+      p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+      .lower{
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        a{
+          
+        }
+      }
       }
     }
   }
