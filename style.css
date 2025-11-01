@@ -20,7 +20,8 @@ html {
 
 main {
   width: 100%;
-  align-items: center;
+  max-width: 2000px;
+  margin-inline: auto;
 }
 main header {
   height: 3rem;

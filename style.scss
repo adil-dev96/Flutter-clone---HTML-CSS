@@ -24,9 +24,14 @@ html {
   gap: $gap;
 }
 
+
+
 main {
   width: 100%;
-  align-items: center;
+  max-width: 2000px;
+  margin-inline:auto;
+  
+  
 
   header {
     height: 3rem;
@@ -37,6 +42,8 @@ main {
     font-weight: 700;
     font-family: sans;
     font-size: 0.9rem;
+    
+    
   }
 
   section .logo img {
