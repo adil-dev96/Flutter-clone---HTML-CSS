@@ -302,76 +302,60 @@ main {
     }
   }
 
-  #ninthSection{
-    @include flex-column(0rem);
-background-color: #042449;
-
-
-    img{
-      width: 50%;
-      
-    }
-  }
-#ninthSection {
-  @include flex-column(2rem);
-  background-color: #042449;
-  color: white;
-  padding: 4rem 2rem;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  h3 {
-    font-family: sans;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-  }
-
-  p {
-    font-family: Roboto;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: #b8eafe;
-    max-width: 500px;
-    line-height: 1.6rem;
-  }
-
-  button {
-    padding: 0.8rem 2.5rem;
-    border: none;
-    border-radius: 40px;
-    background-color: #13b9fd;
-    color: #042449;
-    font-family: sans;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 1rem;
-    transition: 0.3s ease;
-  }
-
-  button:hover {
-    background-color: white;
-  }
-
-  a {
-    display: inline-block;
-    margin-top: 1rem;
-    color: white;
-    text-decoration: none;
-    font-family: sans;
-    font-weight: 700;
-
-    i {
-      margin-left: 0.4rem;
-    }
-  }
-
-  img {
+  #ninthSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
     width: 100%;
-    max-width: 600px;
-    margin-top: 3rem;
+
+    .textbox {
+      background-color: #042449;
+      padding: 8rem 4rem;
+      width: 100%;
+      border-radius: 3rem;
+      background-image: url(/assest/img9.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.8rem;
+      color: white;
+
+      h3 {
+        font-size: 3.1rem;
+        font-family: sans;
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: roboto;
+      }
+
+      .btn-box {
+        @include flex-column(1.8rem);
+        font-family: sans;
+        button {
+          padding: 0.8rem 2.5rem;
+          width: fit-content;
+          background-color: white;
+          color: #0468d7;
+          border-radius: 2rem;
+          border: none;
+          font-weight: 600;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          padding-left: 1.6rem;
+        }
+      }
+    }
   }
-}
 }
 
 @media (min-width: 900px) {
@@ -526,6 +510,34 @@ background-color: #042449;
         p {
           font-size: 1.2rem;
           line-height: 2rem;
+        }
+      }
+    }
+
+    #ninthSection {
+      padding: 8rem 6rem;
+
+      .textbox {
+        align-items: start;
+        justify-content: space-between;
+        background-position: 100% 50%;
+        padding: 6rem 6rem;
+        background-size: contain;
+        gap: 1rem;
+
+        h3 {
+          font-size: 4.5rem;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .btn-box {
+          flex-direction: row;
+
+          align-items: center;
         }
       }
     }
